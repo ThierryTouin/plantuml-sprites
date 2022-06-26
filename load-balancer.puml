@@ -5,10 +5,10 @@ xTKriiD048JXdcsu_uqDYMbMLQC7cVzKdtW1M9oq043M91jOnYmIrDHgRrbZMo6-bcH4riZcdcVFuBjT
 MJZrQIKeQsChXlnkamWR2-RMc_MXLREvv-hMsLhLw-7KqJCy9L2vz_B4JhrQuYLzJWi-RQjFYsFB65CBrzmMTlRKMWtFzu0pUyiL
 }
 
-!define TTO_LB(_alias) ENTITY(rectangle,black,LB,_alias,TTO LB)
-!define TTO_LB(_alias, _label) ENTITY(rectangle,black,LB,_label, _alias,TTO LB)
-!define TTO_LB(_alias, _label, _shape) ENTITY(_shape,black,LB,_label, _alias,TTO LB)
-!define TTO_LB(_alias, _label, _shape, _color) ENTITY(_shape,_color,LB,_label, _alias,TTO LB)
+!define TTO_LB(_alias) ENTITY(rectangle,black,loadbalancer,_alias,TTO LB)
+!define TTO_LB(_alias, _label) ENTITY(rectangle,black,loadbalancer,_label, _alias,TTO LB)
+!define TTO_LB(_alias, _label, _shape) ENTITY(_shape,black,loadbalancer,_label, _alias,TTO LB)
+!define TTO_LB(_alias, _label, _shape, _color) ENTITY(_shape,_color,loadbalancer,_label, _alias,TTO LB)
 skinparam folderBackgroundColor<<TTO LB>> White
 
 @enduml
