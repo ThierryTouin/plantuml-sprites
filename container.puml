@@ -9,7 +9,7 @@
 !define BOX1_SERVICE_COLOR #FCC133
 !define BOX1_FONT_COLOR #000000
 !define BOX1_BACKGROUND_COLOR #FFFFFF
-!define BOX2_COLOR MediumSlateBlue
+!define BOX2_COLOR Darkorange
 
 ' Styling
 ' ##################################
