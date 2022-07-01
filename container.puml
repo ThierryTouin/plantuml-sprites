@@ -1,0 +1,52 @@
+@startuml
+
+' Colors
+' ##################################
+!define BOX1_COLOR #326CE5
+!define BOX1_NS_COLOR #FF4216
+!define BOX1_NODE_COLOR #096B24
+!define BOX1_POD_COLOR #09E508
+!define BOX1_SERVICE_COLOR #FCC133
+!define BOX1_FONT_COLOR #000000
+!define BOX1_BACKGROUND_COLOR #FFFFFF
+!define BOX2_COLOR #MediumSlateBlue
+
+' Styling
+' ##################################
+
+skinparam rectangle<<box1>> {
+    StereotypeFontColor BOX1_FONT_COLOR
+    FontColor BOX1_FONT_COLOR
+    BorderStyle line
+    BorderColor BOX1_COLOR
+    BackgroundColor BOX1_BACKGROUND_COLOR
+    RoundCorner 25
+}
+
+skinparam rectangle<<box2>> {
+    StereotypeFontColor BOX1_FONT_COLOR
+    FontColor BOX1_FONT_COLOR
+    BorderStyle line
+    BorderColor BOX2_COLOR
+    BackgroundColor BOX1_BACKGROUND_COLOR
+    RoundCorner 25
+}
+
+' Boundaries
+' ##################################
+
+' Definitions
+
+' box1
+!define Box1(e_alias, e_label) rectangle "==e_label" <<box1>> as e_alias
+!define Box1(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<box1>> as e_alias
+
+' Elements
+!define Box1_Boundary(e_alias, e_label) Box1(e_alias, e_label)
+
+' box2
+!define Box2(e_alias, e_label) rectangle "==e_label" <<box2>> as e_alias
+!define Box2(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<box2>> as e_alias
+
+
+@enduml
