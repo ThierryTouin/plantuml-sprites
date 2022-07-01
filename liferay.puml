@@ -1,3 +1,5 @@
+@startuml
+
 sprite $liferay [225x225/16z] {
 xTq7agGm34PX7A2D_lkVTtC6kMjTPj5IxrKUJVeckjLf-VSH4H4H4H4H4H4H4H4H4H4HvNf_-JfTKunUrnXVaiL8Uitd9PF5IJOTQB98QP_-yscnqZRLbsNH
 Kfe9R061wqoWB63F-0drqqHW3GbCJmTcW001ZWSGe0021AX3tLbl618eQt-sIzzc-ydCEhE0GDNbMFesAyw54kypAme7T5PRHVwbqLNEr-LJcq81_KyqoVa6
@@ -8,3 +10,11 @@ VZS5lCrslyltecos0GAKx93iQ_9VNSui5d3ytcUoT1obfc30yViFAftEWW77xW5Q9npLGWDBV210W001
 673yaTAbTiXayO3ZZtMlGsosdmS4210WG8000IQ0F0VeZnJGrsO2DyK3bfd0f70-MwQswXd_9FoQmZrHz8E5wlZ6gr8KdkNbakgk2BMoN5Uwl-M6Y8Y8Y8Y8
 Y8Y8Y8Y8Y8Y8Y3u2
 }
+
+!define TTO_LFR(_alias) ENTITY(rectangle,black,liferay,_alias,TTO LFR)
+!define TTO_LFR(_alias, _label) ENTITY(rectangle,black,liferay,_label, _alias,TTO LFR)
+!define TTO_LFR(_alias, _label, _shape) ENTITY(_shape,black,liferay,_label, _alias,TTO LFR)
+!define TTO_LFR(_alias, _label, _shape, _color) ENTITY(_shape,_color,liferay,_label, _alias,TTO LFR)
+skinparam folderBackgroundColor<<TTO LFR>> White
+
+@enduml
