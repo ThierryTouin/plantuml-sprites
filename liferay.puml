@@ -11,10 +11,10 @@ VZS5lCrslyltecos0GAKx93iQ_9VNSui5d3ytcUoT1obfc30yViFAftEWW77xW5Q9npLGWDBV210W001
 Y8Y8Y8Y8Y8Y8Y3u2
 }
 
-!define TTO_LFR(_alias) ENTITY(rectangle,black,liferay*0.6,_alias,TTO LFR)
-!define TTO_LFR(_alias, _label) ENTITY(rectangle,black,liferay*0.6,_label, _alias,TTO LFR)
-!define TTO_LFR(_alias, _label, _shape) ENTITY(_shape,black,liferay*0.6,_label, _alias,TTO LFR)
-!define TTO_LFR(_alias, _label, _shape, _color) ENTITY(_shape,_color,liferay*0.6,_label, _alias,TTO LFR)
+!define TTO_LFR(_alias) ENTITY(rectangle,black,<$liferay{scale=0.6}>,_alias,TTO LFR)
+!define TTO_LFR(_alias, _label) ENTITY(rectangle,black,<$liferay{scale=0.6}>,_label, _alias,TTO LFR)
+!define TTO_LFR(_alias, _label, _shape) ENTITY(_shape,black,<$liferay{scale=0.6}>,_label, _alias,TTO LFR)
+!define TTO_LFR(_alias, _label, _shape, _color) ENTITY(_shape,_color,<$liferay{scale=0.6}>,_label, _alias,TTO LFR)
 skinparam folderBackgroundColor<<TTO LFR>> White
 
 @enduml
